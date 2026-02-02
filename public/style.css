@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libertinus+Math&family=Matangi:wght@300..900&family=Oswald:wght@200..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*{
+   font-family: "Libertinus Math", system-ui;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container{
+    flex: 1;
+}
+
+/*navbar*/
+.navbar{
+    height: 5rem;
+    background: white;
+    font-size: large;
+}
+
+.fa-compass{
+    color: #fe424d;
+    font-size: 2rem;
+}
+
+.nav-link{
+    color: #222222 !important;
+}
+
+  .btn-search {
+    background-color: #ff385c !important;
+    color: white !important;
+    border-radius: 1rem !important;
+    padding: 0.5rem 1rem !important;
+    margin-left: 1rem !important;
+  }
+
+  .btn-search:hover {
+    background-color: #ff385c !important;
+    color: white !important;
+    border-radius: 1rem !important;
+    padding: 0.5rem 1rem !important;
+    margin-left: 1rem !important;
+  }
+
+  .btn-search i {
+    margin-right: 0.5rem !important;
+    display: inline !important;
+  }
+
+  .search-inp{
+    border-radius: 1.5rem !important;
+    padding: 0.5rem 1rem !important;
+    font-size: 0.9rem !important;
+  }
+
+  .special {
+    background: #a7a5a5a2 !important;
+    border-radius: 1rem !important;
+    margin-right: 2rem !important;
+    padding: 0 1rem 1 0rem !important;
+  }
+
+  .logo{
+    display: flex !important;
+    font-weight: 900 !important;
+    font-size: 3rem !important;
+  }
+
+  .logo .first{
+    font-family: "Ubuntu", sans-serif !important;
+    color: #fe424d !important;
+  }
+
+  .logo .second{
+    font-family: "Ubuntu", sans-serif !important;
+    color: #ffffff !important;
+    -webkit-text-stroke: 1px #fe424d !important;
+  }
+
+  .form-select{
+    border-radius: 1.5rem !important;
+    padding: 0.5rem 1rem !important;
+    font-size: 0.9rem !important;
+    margin-left: 1rem !important;
+    width: 10rem !important;
+  }
+  @media (min-width: 768px) {
+    .signup b, .login b, .logout b {
+    display: none !important;
+  }
+  }
+  
+  
+
+  @media (max-width: 768px) {
+  .navbar-nav .logo {
+    display: none !important;
+  }
+
+  .navbar-nav form {
+    flex-direction: column !important;
+    gap: 0.5rem;
+  }
+
+  .form-select, .search-inp, .btn-search {
+    width: 100% !important;
+    margin-left: 0 !important;
+  }
+
+  .special {
+    margin: 1rem 0 !important;
+    text-align: center;
+  }
+
+   .signup, .login, .logout {
+    color: #000000 !important;
+    background: #ffffff !important;
+    border-radius: 1rem !important;
+    border: 1px solid #000000 !important;
+    padding: 0.5rem 1rem !important;
+    margin-bottom: 1rem;
+  }
+}
+
+
+
+/*footer*/
+
+.f-info-links a{
+    text-decoration: none;
+    color: #222222;
+}
+
+.f-info-links a:hover{
+    text-decoration: underline;
+}
+
+.f-info {
+    display: flex;
+    height: 8rem;
+    background: #cac8c8;
+    flex-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
+.f-info-links{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.f-info-socials{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0.5rem;
+    font-size: 1.2rem;
+}
+
+.f-info-socials i{
+    margin-right: 2rem;
+}
+
+.f-info-brand{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 576px) {
+  .f-info {
+    text-align: center;
+    gap: 0.5rem;
+  }
+
+  .f-info-links, .f-info-socials {
+    gap: 0.5rem;
+  }
+}
+
+
+/*cards*/
+
+.listing-card {
+    border: none !important;
+    margin-bottom: 2rem;
+}
+
+.card-img-top{
+    border-radius: 1rem !important;
+    height: 20rem;
+    object-fit: cover !important;
+}
+
+.card body{
+    padding: 0;
+}
+
+.listing-link{
+    text-decoration: none;
+}
+
+.card-img-overlay{
+    opacity: 0;
+}
+
+.card-img-overlay:hover{
+    opacity: 0.2;
+    background: white;
+}
+
+/*new route*/
+
+.add-btn{
+    background-color: #fe424d !important;
+    border: #fe424d !important;
+}
+
+@media (max-width: 768px) {
+  .row .col-md-4, 
+  .row .col-md-8 {
+    width: 100% !important;
+  }
+
+  .card-img-top {
+    height: 14rem;
+  }
+
+  .main {
+    width: 100% !important;
+  }
+}
+
+
+/*show route*/
+
+.main{
+    font-size: 1.15rem;
+}
+
+.description{
+    font-style: italic;
+}
+
+.btns {
+    display: flex !important;
+    margin-bottom: 2rem;
+}
+
+.edit-btn{
+    margin-right: 1rem;
+}
+
+@media (max-width: 576px) {
+  .listing-card.card {
+    width: 100% !important;
+  }
+
+  .card-body p {
+    font-size: 0.9rem;
+  }
+
+  .tax-info {
+    font-size: 0.8rem;
+  }
+}
+
+
+/* filter */
+
+#filter {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    overflow-x: auto;
+    padding: 1rem 0;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    flex-wrap: nowrap;
+}
+
+#filter::-webkit-scrollbar {
+        display: none;
+    }
+
+.filter{
+    margin-top: auto;
+    text-align: center;
+    opacity: 0.8;
+    flex: 0 0 auto;
+    padding: 0.5rem;
+    min-width: 80px;
+    cursor: pointer;
+}
+
+.filter i {
+        font-size: 1.2rem;
+    }
+
+.filter p{
+    font-size: 0.9rem;
+}
+
+.filter:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.tax-info {
+    display: none;
+}
+
+.toggle{
+    flex: 0 0 auto;
+    border: solid 1px #000000;
+    border-radius: 1rem;
+    padding: 0.5rem 1rem;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 576px) {
+  .toggle {
+    padding: 0.3rem 0.6rem;
+    font-size: 0.9rem;
+  }
+
+  .form-check-label {
+    font-size: 0.9rem;
+  }
+}
+
+
+@media (max-width: 768px) {
+    .listing-card {
+        width: 100% !important;
+    }
+
+    .card-body p {
+        font-size: 0.9rem;
+    }
+
+    .tax-info {
+        font-size: 0.8rem;
+    }
+}
+
+/*map*/
+
+#map {
+  width: 100% !important;
+  height: 400px;
+  border-radius: 1rem;
+}
