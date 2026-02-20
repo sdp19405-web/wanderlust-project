@@ -16,14 +16,16 @@
 
 const taxSwitch = document.getElementById('switchCheckDefault');
 
-    taxSwitch.addEventListener('change', () => {
-        const taxInfoElements = document.getElementsByClassName('tax-info');
-        for (let i = 0; i < taxInfoElements.length; i++) {
-            const info = taxInfoElements[i];
-            if (info.style.display === 'inline') {
-                info.style.display = 'none';
-            } else {
-                info.style.display = 'inline';
-            }
-        }
-    });
+if (taxSwitch) {
+  taxSwitch.addEventListener('change', () => {
+    const taxInfoElements = document.getElementsByClassName('tax-info');
+    for (let i = 0; i < taxInfoElements.length; i++) {
+      const info = taxInfoElements[i];
+      if (info.style.display === 'inline') {
+        info.style.display = 'none';
+      } else {
+        info.style.display = 'inline';
+      }
+    }
+  });
+}
